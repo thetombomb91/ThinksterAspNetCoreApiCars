@@ -22,10 +22,6 @@ namespace ThinksterAspNetCoreApiCars.Controllers
     [ApiController]
     public class CarsController : ControllerBase
     {
-        public CarsController(ICarRepository carRepository)
-        {
-        }
-
         [HttpGet]
         public async Task<IActionResult> Get()
         {
